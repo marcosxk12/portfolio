@@ -1,0 +1,49 @@
+header
+  +clearfix
+  min-height: 636px
+  background:
+      image: url('../images/bg-slide.jpg')
+      position: top center
+      repeat: no-repeat
+      color: $preto
+      attachment: fixed
+      size: cover
+  .logo
+    margin: 45px 0 0
+    float: left
+    img
+      width: 79px
+      height: 47px
+
+  .links
+    margin: 60px 0 0
+    float: right
+    nav
+      +breakpoint($tablet)
+        display: none
+      +breakpoint($celular)
+        display: none
+      ul
+        li
+          display: inline-block
+          margin: 0 20px 0 0
+          font-size: 14px
+          a
+            text-transform: uppercase
+            color: $branco
+
+  h1
+    margin: 260px auto 30px auto
+    clear: both
+    font-weight: $light
+    border: 3px solid $branco
+    padding: 20px
+    display: table
+    +breakpoint($celular)
+      +font-size(35px)
+  p
+    font-weight: $light
+  h1, p
+        text-transform: uppercase
+        color: $branco
+        text-align: center
